@@ -1,12 +1,12 @@
 
 export default function Hero() {
   return (
-    <section className="bg-ivory min-h-[90vh] flex items-center">
+    <section className="bg-background min-h-[90vh] flex items-center">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 px-6 py-20 items-center">
 
         {/* LEFT CONTENT */}
         <div>
-          <p className="uppercase tracking-[0.3em] text-sage text-sm mb-6">
+          <p className="uppercase tracking-[0.3em] text-lavender text-sm mb-6">
             Therapy • Breathwork • Holistic Wellness
           </p>
 
@@ -20,11 +20,11 @@ export default function Hero() {
           </p>
 
           <div className="mt-10 flex gap-4">
-            <button className="bg-sage text-white px-8 py-4 rounded-full hover:opacity-90 transition">
-              Book a Session
+            <button className="bg-plum text-white px-8 py-4 rounded-full hover:opacity-90 transition">
+            Book a Session
             </button>
 
-            <button className="border border-sage text-sage px-8 py-4 rounded-full hover:bg-sage hover:text-white transition">
+            <button className="border border-lavender text-plum px-8 py-4 rounded-full hover:bg-lilac transition">
               Learn More
             </button>
           </div>

@@ -1,29 +1,27 @@
 @import "tailwindcss";
 
 :root {
-  /* Therapeutic color palette */
-  --background: #F7F4EF;
-  --foreground: #3B3B3B;
+  --background: #F5F1FA;
+  --foreground: #3E3A44;
 
-  --sage: #A8B5A2;
-  --rose: #C9A9A6;
-  --sand: #E7DED4;
-  --ivory: #F7F4EF;
-  --charcoal: #3B3B3B;
+  --lavender: #B7A7D6;
+  --plum: #7C6A92;
+  --mint: #BFD8CC;
+  --lilac: #EFE7F7;
+  --charcoal: #3E3A44;
 
-  /* Fonts */
-  --font-body: Arial, Helvetica, sans-serif;
-  --font-heading: Georgia, serif;
+  --font-body: var(--font-body);
+  --font-heading: var(--font-heading);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 
-  --color-sage: var(--sage);
-  --color-rose: var(--rose);
-  --color-sand: var(--sand);
-  --color-ivory: var(--ivory);
+  --color-lavender: var(--lavender);
+  --color-plum: var(--plum);
+  --color-mint: var(--mint);
+  --color-lilac: var(--lilac);
   --color-charcoal: var(--charcoal);
 
   --font-sans: var(--font-body);
@@ -34,6 +32,11 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-body);
+  line-height: 1.6;
+  ::selection {
+  background: #C9A9A6;
+  color: white;
+}
 }
 
 h1,
