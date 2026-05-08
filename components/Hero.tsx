@@ -1,7 +1,7 @@
 
 export default function Hero() {
   return (
-    <section className="bg-background min-h-[90vh] flex items-center">
+    <section className="bg-background min-h-[90vh] flex items-center wellnesspt-24">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 px-6 py-20 items-center">
 
         {/* LEFT CONTENT */}
