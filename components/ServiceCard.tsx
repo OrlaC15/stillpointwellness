@@ -1,5 +1,5 @@
 // components/ServiceCard.tsx
-import { Service } from "@/types";
+import { Service } from "@/types/types";
 
 export default function ServiceCard({ service }: { service: Service }) {
   return (
