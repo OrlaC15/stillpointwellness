@@ -162,7 +162,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(0, 0, 0, 0.15);
 }
 
 .hero__content {
@@ -251,13 +251,12 @@ body {
   right: 0;
   z-index: 100;
   height: var(--nav-height);
-  background: rgba(253, 250, 246, 0.95);
-  backdrop-filter: blur(6px);
-  border-bottom: 1px solid var(--border);
+  background: var(--header-bg);
+  border-bottom: 1px solid rgba(58, 58, 58, 0.15);
   padding: 0 2rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .nav__logo {
@@ -797,6 +796,12 @@ body {
     gap: 0;
     padding: 1rem 0;
   }
+  .nav__dropdown-menu {
+  background: #edf7e6;
+}
+.nav__dropdown-menu a:hover {
+  background: #dfeedd;
+}
 
   .nav__links.is-open {
     display: flex;
