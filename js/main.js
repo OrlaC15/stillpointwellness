@@ -17,19 +17,12 @@ async function loadSection(id, file) {
   }
 }
 
-
-// ── NAVIGATION ─────────────────────────────────────
-
 function initNavigation() {
-
-  // Mobile hamburger
   const hamburger = document.querySelector(".nav__hamburger");
   const navLinks = document.querySelector(".nav__links");
 
   if (hamburger && navLinks) {
-
     hamburger.addEventListener("click", () => {
-
       const isOpen =
         hamburger.getAttribute("aria-expanded") === "true";
 
@@ -42,8 +35,6 @@ function initNavigation() {
     });
   }
 
-
-  // Services dropdown
   const dropdownToggle =
     document.querySelector(".nav__dropdown-toggle");
 
@@ -51,9 +42,7 @@ function initNavigation() {
     document.querySelector(".nav__dropdown");
 
   if (dropdownToggle && dropdown) {
-
     dropdownToggle.addEventListener("click", (event) => {
-
       event.stopPropagation();
 
       const isOpen =
@@ -64,46 +53,28 @@ function initNavigation() {
         String(!isOpen)
       );
 
-      dropdown.classList.toggle(
-        "is-open",
-        !isOpen
-      );
+      dropdown.classList.toggle("is-open", !isOpen);
     });
 
-
-    // Close dropdown when clicking elsewhere
     document.addEventListener("click", () => {
-
-      dropdownToggle.setAttribute(
-        "aria-expanded",
-        "false"
-      );
-
+      dropdownToggle.setAttribute("aria-expanded", "false");
       dropdown.classList.remove("is-open");
-
     });
   }
 }
 
-
-// ── LOAD PAGE SECTIONS ──────────────────────────────
-
 async function init() {
-
-  // Load header first
   await loadSection("header", "header.html");
 
-  // Load the rest
   await Promise.all([
     loadSection("hero", "hero.html"),
+    loadSection("quote", "quote.html"),
     loadSection("about", "about.html"),
-    loadSection("quote", "quote.html")
     loadSection("services", "services.html"),
     loadSection("contact", "contact.html"),
     loadSection("footer", "footer.html")
   ]);
 
-  // Header now exists, so initialise its buttons
   initNavigation();
 }
 
