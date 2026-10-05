@@ -6,8 +6,9 @@
 }
 
 :root {
+  --white: #ffffff;
+  --header-bg: #CAD9D6;
   --cream: #f9f6f1;
-  --warm-white: #fdfaf6;
   --sage: #8a9e8a;
   --sage-dark: #6b7f6b;
   --clay: #b5896a;
@@ -19,7 +20,7 @@
   --font-serif: 'Georgia', serif;
   --font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-  --nav-height: 72px;
+  --nav-height: 110px;
   --container-max: 1100px;
   --section-pad: 6rem 2rem;
 }
@@ -75,6 +76,20 @@ body {
   visibility: hidden;
   pointer-events: none;
   transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: var(--nav-height);
+  background: var(--header-bg);
+  border-bottom: 1px solid rgba(58, 58, 58, 0.15);
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav__dropdown-menu li {
@@ -657,42 +672,42 @@ body {
   color: rgba(255, 255, 255, 0.85);
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  margin: 0 0 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .footer__location {
   font-family: var(--font-sans);
   font-size: 0.82rem;
-  margin: 0 0 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .footer__social {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1.25rem;
-  margin: 0 0 2rem;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
 }
 
 .footer__social-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 45px;
-  height: 45px;
+  width: 42px;
+  height: 42px;
   text-decoration: none;
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition: opacity 0.2s, transform 0.2s;
 }
 
 .footer__social-link img {
   display: block;
-  width: 45px;
-  height: 45px;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 }
 
 .footer__social-link:hover {
-  opacity: 0.7;
+  opacity: 0.75;
   transform: translateY(-2px);
 }
 
@@ -701,8 +716,8 @@ body {
   font-size: 0.75rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 1.5rem;
-  margin: 0;
 }
+
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
   .services__grid {
