@@ -10,7 +10,7 @@
 :root {
   --white: #ffffff;
   --header-bg: #8a9e8a;
-  --cream: #defacd;
+  --cream: #f9f6f1;
   --sage: #8a9e8a;
   --sage-dark: #6b7f6b;
   --clay: #b5896a;
@@ -70,7 +70,7 @@ body {
   padding: 10px 0;
   margin: 0;
   list-style: none;
-  background: white;
+  background: #edf7e6;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 
@@ -107,7 +107,7 @@ body {
 }
 
 .nav__dropdown-menu a:hover {
-  background: #f5f2ed;
+  background: #dfeedd;
 }
 
 /* Desktop hover */
@@ -151,7 +151,7 @@ body {
 .hero {
   position: relative;
   min-height: 80vh;
-  background-image: url("../images/hero1.jpg");
+  background-image: url("../images/hero2.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
