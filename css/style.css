@@ -116,6 +116,58 @@ body {
 .nav__dropdown-toggle[aria-expanded="true"] .nav__dropdown-arrow {
   transform: rotate(180deg);
 }
+/* ── Nav LOGO ── */
+.nav__logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav__logo img {
+  display: block;
+  width: 150px;
+  height: auto;
+  max-height: 60px;
+  object-fit: contain;
+}
+
+/* ── HERO ── */
+.hero {
+  position: relative;
+  min-height: 80vh;
+  background-image: url("../images/hero1.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  padding: 100px 8%;
+  color: white;
+}
+
+.hero__heading {
+  margin: 15px 0 25px;
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  line-height: 1.05;
+}
+
+.hero__sub {
+  max-width: 580px;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  margin-bottom: 35px;
+}
 
 /* ── TYPOGRAPHY UTILITIES ── */
 .section-label {
