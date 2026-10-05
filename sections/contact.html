@@ -1,36 +1,110 @@
- <!-- ── CONTACT ── -->
-    <section class="contact" id="contact" aria-labelledby="contact-heading">
-      <div class="contact__header">
-        <p class="section-label">Get In Touch</p>
-        <h2 class="section-heading" id="contact-heading">Begin your journey</h2>
-        <p class="section-body">
-          If you are considering therapy and would like to find out more, I welcome
-          you to reach out. All enquiries are held in complete confidence.
-        </p>
-      </div>
+\<section class="contact" id="contact" aria-labelledby="contact-heading">
 
-      <form class="contact__form" novalidate>
-        <div class="form-field">
-          <label class="form-field__label" for="name">Your Name</label>
-          <input class="form-field__input" type="text" id="name"
-                 name="name" placeholder="Jane Smith" autocomplete="name" />
-        </div>
-        <div class="form-field">
-          <label class="form-field__label" for="email">Email Address</label>
-          <input class="form-field__input" type="email" id="email"
-                 name="email" placeholder="jane@example.com" autocomplete="email" />
-        </div>
-        <div class="form-field form-field--full">
-          <label class="form-field__label" for="message">Message</label>
-          <textarea class="form-field__textarea" id="message" name="message"
-                    rows="6" placeholder="Tell me a little about what brings you here..."></textarea>
-        </div>
-        <div class="form-field form-field--submit">
-          <button type="submit" class="btn">Send Message</button>
-        </div>
-      </form>
+&#x20; \<div class="contact__header">
 
-      <p class="contact__location">
-        Laragh, Glendalough, Co. Wicklow, Ireland
-      </p>
-    </section>
+```
+<p class="section-label">Get In Touch</p>
+
+<h2 class="section-heading" id="contact-heading">
+  Begin your journey
+</h2>
+
+<p class="section-body">
+  If you are considering therapy and would like to find out more, I welcome
+  you to reach out. All enquiries are held in complete confidence.
+</p>
+```
+
+&#x20; \</div>
+
+&#x20; \<form
+&#x20;   class="contact__form"
+&#x20;   action="[https://formspree.io/f/mzedzpey](https://formspree.io/f/mzedzpey)"
+&#x20;   method="POST"
+&#x20; \>
+
+```
+<div class="form-field">
+
+  <label
+    class="form-field__label"
+    for="name"
+  >
+    Your Name
+  </label>
+
+  <input
+    class="form-field__input"
+    type="text"
+    id="name"
+    name="name"
+    placeholder="Jane Smith"
+    autocomplete="name"
+    required
+  />
+
+</div>
+
+
+<div class="form-field">
+
+  <label
+    class="form-field__label"
+    for="email"
+  >
+    Email Address
+  </label>
+
+  <input
+    class="form-field__input"
+    type="email"
+    id="email"
+    name="email"
+    placeholder="jane@example.com"
+    autocomplete="email"
+    required
+  />
+
+</div>
+
+
+<div class="form-field form-field--full">
+
+  <label
+    class="form-field__label"
+    for="message"
+  >
+    Message
+  </label>
+
+  <textarea
+    class="form-field__textarea"
+    id="message"
+    name="message"
+    rows="6"
+    placeholder="Tell me a little about what brings you here..."
+    required
+  ></textarea>
+
+</div>
+
+
+<div class="form-field form-field--submit">
+
+  <button
+    type="submit"
+    class="btn"
+  >
+    Send Message
+  </button>
+
+</div>
+```
+
+&#x20; \</form>
+
+&#x20; \<p class="contact__location">
+&#x20;   Laragh, Glendalough, Co. Wicklow, Ireland
+&#x20; \</p>
+
+\</section>
