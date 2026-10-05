@@ -64,17 +64,21 @@ function initNavigation() {
 }
 
 async function init() {
+
+  // Load header first
   await loadSection("header", "header.html");
 
+  // Load the rest of the page
   await Promise.all([
     loadSection("hero", "hero.html"),
-    loadSection("quote", "quote.html"),
     loadSection("about", "about.html"),
+    loadSection("quote", "quote.html"),
     loadSection("services", "services.html"),
     loadSection("contact", "contact.html"),
     loadSection("footer", "footer.html")
   ]);
 
+  // Initialise navigation after header has loaded
   initNavigation();
 }
 
